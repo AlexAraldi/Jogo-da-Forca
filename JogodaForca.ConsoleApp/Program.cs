@@ -10,18 +10,27 @@
 
             //Solicita que o jogador digite um letra
             Console.Write("Digite uma letra válida: ");
-            string palavra = Console.ReadLine(); // abacaxi
+            string entradainicial = Console.ReadLine(); // abacaxi
 
-            char letra = palavra[0];
+            if( entradainicial.Length > 1)
+                       
+            {
+                Console.WriteLine("Informe apenas um caracter: ");
+                return;
+            }
+
+            char chute = entradainicial[0];
+
+            Console.WriteLine(entradainicial);
 
 
             //essa letra precisa ser avaliada pelo computador para ver se esta na palavra
             Console.ReadLine();
 
 
-
         }
-       
+    }
+}                   
 
 
 
